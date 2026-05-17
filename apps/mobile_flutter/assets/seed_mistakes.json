@@ -1,0 +1,20 @@
+[
+  {
+    "id": "m001",
+    "question": "for 循环边界写错导致数组越界",
+    "wrongAnswer": "i <= arr.length",
+    "correctAnswer": "i < arr.length",
+    "reason": "length 是元素个数，最后一个索引是 length - 1",
+    "category": "Java",
+    "tags": ["循环", "边界"]
+  },
+  {
+    "id": "m002",
+    "question": "二分查找边界条件错误",
+    "wrongAnswer": "while (l < r)",
+    "correctAnswer": "while (l <= r)",
+    "reason": "闭区间二分需要包含最后一个候选值",
+    "category": "算法",
+    "tags": ["二分"]
+  }
+]

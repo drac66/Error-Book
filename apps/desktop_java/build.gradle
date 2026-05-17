@@ -1,0 +1,28 @@
+plugins {
+    id 'application'
+}
+
+group = 'com.errorbook'
+version = '0.1.0'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.11.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.3'
+}
+
+application {
+    mainClass = 'com.errorbook.app.Main'
+}
+
+test {
+    useJUnitPlatform()
+}
